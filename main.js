@@ -9,12 +9,15 @@ function init(){
 	console.log("I'm init");
 	$("#getZip").click(getInfoForZip);
 	$("#zip").data("value", defaultZip());
+	$(".header").mouseover(function(){
+		$(".heading").toggleClass("invisible");
+		})
 }
 
 function defaultZip(){
 	$.get("http://api.wunderground.com/api/dad32a490467dc62/geolookup/conditions/q/autoip.json")
 		 .done(function (data){
-		 	$("#zip").val(data.location.zip)
+		 	$("#zip").val(data.location.zip);
 	});
 }
 function getInfoForZip(){
@@ -33,26 +36,23 @@ function getInfoForZip(){
 		 		var	forecast = (data.current_observation.forecast_url);
 				console.log( data);
 				 if (parseInt(temp) < 80){	
-						var hot = true; 
-				 	$("#hotOrCold").text("No, but you're pretty cool!");
-				}else{
+				 	$("#hotOrCold").text("Nah, but you are one cool cucumber!");
+				 	$(".coolCue").removeClass("invisible");
+				 	$("#wrapper").removeClass("summer").addClass("winter").css("color", "white");
+ 					$("#vacationIdeas").attr("href", "https://www.airbnb.com/s/Lake-Tahoe--United-States?af=8781787&c=p2_d_eng_laketahoe_p2&gclid=CjwKEAiA9uaxBRDYr4_hrtC3tW8SJAD6UU8G0NtnffCX2bpOjigNIPJ6r9Z0tEwGdplAVkVmOT0vjBoCQUHw_wcB&dclid=CNrwqN-19sgCFaQSRQod3P4M7A")
+ 						.text("chill out");				
+ 									}else{
 					var hot = false;
-					$("#hotOrCold").text("Yeah You ARrre!");
+					$("#hotOrCold").text("Yeah you are! You are one hawt tamale!");
+					$(".hottie").removeClass("invisible");
+					$("#wrapper").removeClass("winter").addClass("summer");
 				}
-					$(".temp").text(temp);
-				 	//$("#temp").text(temp);
-				// 	console.log($("#temp").text(temp));
-				// 	$("#icon").attr("src", icon);
-				// 	$("#forecast").attr("href", forecast).text("Forecast");
-				// 	if (hot){
-				// 			$("#pageWrapper").css({"background-image": url('http://imgc.allpostersimages.com/images/P-473-488-90/26/2680/ESZUD00Z/posters/mike-england-beach-scene-barbados.jpg')
-				// 							});
-				// 								$("#vacationIdeas").attr("href", "http://www.smartertravel.com/travel-advice/Beat-heat-Five-cool.html?id=15616");}
-				// 	})else {
-				// 		$("#pageWrapper").css(background-image", "url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScbTh8ZCanwVrqMs2yHOFvC842HSURy3aDgD_XNwahNTLUi_lkf5E4WVCG"));
- 			// 			 						$("#vacationIdeas").attr("href", 
- 			 					 	}	)
-
+					$("#vacationIdeas").attr("href", "https://www.airbnb.com/?af=43720035&c=A_TC%3Djmydw8thr5%26G_MT%3Db%26G_CR%3D19944542536%26G_N%3Dg%26G_K%3D%2Bair%20%2Bbnb%26G_P%3D%26G_D%3Dc&gclid=CjwKEAiA9uaxBRDYr4_hrtC3tW8SJAD6UU8GiANrBwuak5j42k1L9KrT7_Q-8PzbUixzhajnnRZHDRoCrm3w_wcB&dclid=CKzjtYS39sgCFTEHRQodbVcByA")
+						.text("hot time in a new town... huh... huhhhh?")
+					console.log($("#temp").text(temp));
+				 	$("#icon").attr("src", icon);
+					$("#forecast").attr("href", forecast).text("Forecast");
+			})
 			.fail(function(promise, status, error){
 				console.log("promise:", promise);
 				console.log("error:", error);

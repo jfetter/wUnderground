@@ -2,25 +2,26 @@ body{
 
 }
 
-
-.holder{
-	border: 3px solid black;
-	width: 40vw;
-	text-align: center;
-	background-color: white;
-	margin: 5vw;
-	border-radius: 10%;
-	font-weight: bold;
-	color: red;
-}
-
-#wrapper{
-background-image: url("http://imgc.allpostersimages.com/images/P-473-488-90/26/2680/ESZUD00Z/posters/mike-england-beach-scene-barbados.jpg")*/;
+p{
+	text-weight: bold;
+	font-size: 2em;
 
 }
 
 .winter{
+background-image: url("http://imgc.allpostersimages.com/images/P-473-488-90/26/2680/ESZUD00Z/posters/mike-england-beach-scene-barbados.jpg");
 
 }
 
-.table{}
+.summer{
+background-image: url("http://www.wallbo.com/wp-content/uploads/2014/11/Winter-Christmas-Tree-Scene-Wallpaper.jpg");
+}
+
+.table{
+	border: 1px solid black;
+}
+
+	.invisible{
+		color: green;
+	display: hidden;
+}
