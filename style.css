@@ -1,27 +1,71 @@
 body{
+	background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR--jDd2mWV2NyhdetVWqHtyIyL2VWhiZD26ajko42S-8lDzjdY9eQjMcXF");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
 
+.outterRow{
+	background-color: purple;
+	border-radius: 2%;
+	margin: 5%;
+}
+
+.topCol{
+	border: 5px solid yellow;
+
+}
+
+#currentInfoContainer{
+	
+	text-align: center;
+	border-radius: 3%;
+	background-color: white;
+	color: lightblue;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.currentInf1{
+	color: blue;
+}
+
+#getZip{
+	font-weight: bold;
 }
 
 p{
 	text-weight: bold;
 	font-size: 2em;
-
 }
 
-.winter{
-background-image: url("http://imgc.allpostersimages.com/images/P-473-488-90/26/2680/ESZUD00Z/posters/mike-england-beach-scene-barbados.jpg");
-
+.heading{
+	font-size: 1%;
 }
 
-.summer{
-background-image: url("http://www.wallbo.com/wp-content/uploads/2014/11/Winter-Christmas-Tree-Scene-Wallpaper.jpg");
+.winter, .summer{
+	background-repeat: no-repeat;
+	background-size:100% auto;
+}
+
+.winter {
+margin: 25px;
+background-image: url("http://brandthunder.com/wp/wp-content/uploads/2015/06/summer-beach-for-her-desktop-wallpaper-1024x640.jpg");
+color: red;
+
+.summer {
+background-image: url("http://img6.onthesnow.com/image/gg/14/mammoth_spring_snowboarders_3_1421.jpg");
 }
 
 .table{
 	border: 1px solid black;
 }
 
-	.invisible{
+/*	.invisible{
 		color: green;
 	display: hidden;
+}*/
+
+
+.zip{
+	color: black;
 }
