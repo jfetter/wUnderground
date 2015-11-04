@@ -3,34 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Weather... or Not</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
   <div id="heading">
     <h1 class="heading">Weather ... or Not</h1>
-    <p class="heading">you like weather or puns<br/> you'll be flooded with both here                  </p>
-  </div>
+    <p class="heading">you like weather or puns or not<br/> 
+      you're about to be flooded with both </p>
+  </div> <!-- heading -->
+<div id="wrapper">
   <button id="getZip">Are You Hot or Not?</button>
-  <input type="text" id="zip" placeholder="where you at?">
-  <div id="invalideZip"></div>
+  <input type="text" id="zip" placeholder="">
+  <div id="hotOrCold"></div>
+    <h2 class="temp"></h2>
+
+  <div id="currentInfoContainer">
+    <table id="table" class="weathertable ">  
+      <tr class="weathertable">
+        <td class="weathertable" id="icon"></td>
+      </tr>
+      <tr class="weathertable">
+        <td id="temp" class="weathertable"></td>
+      </tr>
+      <tr class="weathertable">
+        <td class="weathertable" ><a id="icon" href="#"></a>
+        </td>
+      </tr>
+    </table>
+    
+  <div class="vacationIdeas"><a href=""></a></div>
+</div> <!-- //page wrapper -->
 
 
-
-  //beach scene if above 70
+<!--   //beach scene if above 70
   //forrest if 50-70
   //snow scene if below 50
   <p>How hot would you like to be?</p>
   <p>Here are some places you may want to visit:</p>
   //display warm places
-  //display price of plane tickets
-
-
-
-  <div id="tempDisp"></div>
-  
+  //display price of plane tickets -->
 
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js
   <script src="main.js"></script>
 </body>
 </html>
