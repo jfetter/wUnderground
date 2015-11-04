@@ -5,7 +5,7 @@ body{
 }
 
 .outterRow{
-	background-color: purple;
+	/*background-color: purple;*/
 	border-radius: 2%;
 	margin: 5%;
 }
@@ -16,7 +16,7 @@ body{
 }
 
 #currentInfoContainer{
-	
+
 	text-align: center;
 	border-radius: 3%;
 	background-color: white;
@@ -25,17 +25,30 @@ body{
 	font-size: 1.5em;
 }
 
+#vacationIdeas{
+	background-color: white
+	border-radius: 5%;
+}
+
+.coolCue{
+	color: darkgreen;
+}
+
+.hottie{
+	color:red;
+}
+
+.hottie, .coolCue{
+    color: darkgreen;
+    font-size: 3vw;
+    padding: 1vw;
+}
 .currentInf1{
 	color: blue;
 }
 
 #getZip{
 	font-weight: bold;
-}
-
-p{
-	text-weight: bold;
-	font-size: 2em;
 }
 
 .heading{
@@ -51,19 +64,17 @@ p{
 margin: 25px;
 background-image: url("http://brandthunder.com/wp/wp-content/uploads/2015/06/summer-beach-for-her-desktop-wallpaper-1024x640.jpg");
 color: red;
+}
 
 .summer {
 background-image: url("http://img6.onthesnow.com/image/gg/14/mammoth_spring_snowboarders_3_1421.jpg");
 }
 
-.table{
-	border: 1px solid black;
-}
-
-/*	.invisible{
+	.invisible{
 		color: green;
 	display: hidden;
-}*/
+}
+
 
 
 .zip{
