@@ -39,7 +39,7 @@ function getInfoForZip(){
 		 		console.log( data);
 		 					// })
  				 		// $.get(logo.url)
-				 if (parseInt(temp) < 80){
+				 if (parseInt(temp) > 80){
 				 	$("#hotOrCold").text("Whoa!" + temp + " degrees! " + 
 				 		"You definitely aren't hot, but you are one cool cucumber!").removeClass("hottie");
 				 	$(".coolCue").removeClass("invisible");
